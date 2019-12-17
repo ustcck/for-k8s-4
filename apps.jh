@@ -1,0 +1,53 @@
+application {
+  config {
+    baseName gateway,
+    packageName com.ustcck.gateway,
+    applicationType gateway,
+    authenticationType jwt,
+    nativeLanguage zh-cn,
+    languages [en, zh-cn],
+    prodDatabaseType mysql,
+    searchEngine false,
+    serviceDiscoveryType eureka,
+    testFrameworks [protractor]
+  }
+}
+
+application {
+  config {
+    baseName blog,
+    packageName com.ustcck.blog,
+    applicationType microservice,
+    authenticationType jwt,
+    nativeLanguage zh-cn,
+    languages [en, zh-cn],
+    prodDatabaseType mysql,
+    searchEngine false,
+    serverPort 8081,
+    serviceDiscoveryType eureka
+  }
+}
+
+application {
+  config {
+    baseName store,
+    packageName com.ustcck.store,
+    applicationType microservice,
+    authenticationType jwt,
+    nativeLanguage zh-cn,
+    languages [en, zh-cn],
+    prodDatabaseType mysql,
+    searchEngine false,
+    serverPort 8082,
+    serviceDiscoveryType eureka
+  }
+}
+
+deployment {
+  deploymentType kubernetes
+  appsFolders [gateway, blog, store]
+  dockerRepositoryName "ustcck"
+  monitoring elk
+  consoleOptions [zipkin]
+  kubernetesServiceType NodePort
+}

@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "zh-cn"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "zh-cn",
+    "packageName": "com.ustcck.blog",
+    "packageFolder": "com/ustcck/blog",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "baseName": "blog",
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "serverPort": "8081",
+    "jhipsterVersion": "6.5.1",
+    "buildTool": "maven",
+    "skipUserManagement": true,
+    "clientPackageManager": "npm",
+    "cacheProvider": "hazelcast",
+    "jwtSecretKey": "YjRiNGFjZTU3MzhlN2JkZTU2ZWQ0ZGU3ZWIyZGY3Yzk3ZDlhNTM0YWE2MWY4ZmIxMWRlN2U1NDQ2OTc0ZGIzNTc2ZGU5MmUzYWIxNjNkYjY5NDhiYjE4ZmYzMmIwMGVkMDUyMTY2NDA2MmYyNjQ0MjZmZDdkNDA3MjAxNGRmMDI=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "entities": []
+}
